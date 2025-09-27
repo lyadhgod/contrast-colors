@@ -1,0 +1,31 @@
+{
+  "name": "contrast-colors",
+  "version": "1.0.0",
+  "description": "A TypeScript library for working with contrast colors",
+  "license": "MIT",
+  "author": "lyadhgod (https://www.lyadhgod.com/)",
+  "keywords": [
+    "color",
+    "contrast"
+  ],
+  "homepage": "https://github.com/lyadhgod/contrast-colors#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyadhgod/contrast-colors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lyadhgod/contrast-colors/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx rmdir-cli ./dist && npx tsc",
+    "link": "npx rmdir-cli ./dist && npm link",
+    "publish": "npm run build && npm publish"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.2"
+  }
+}
