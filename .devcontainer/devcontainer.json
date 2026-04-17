@@ -1,0 +1,14 @@
+{
+    "image": "node:25.8.0-bookworm",
+    "runArgs": [ "--name", "contrast-colors_devcontainer" ],
+    "postCreateCommand": "PROOT=$(pwd) && npm install",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "chat.autoReply": true,
+                "chat.tools.global.autoApprove": true,
+                "chat.agent.maxRequests": 9999
+            }
+        }
+    }
+}
